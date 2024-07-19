@@ -23,25 +23,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Установка OpenSSL
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y openssl
-
-      - name: Настройка SSH для деплоя
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCnWy4bYBbqlKqinWW9Zy53cBo+xnO3yO5OlD7VEBsyWIPAWRMzgMPio5NpSu1AKNmoGbTin7CGL0CZheqcul5OU2ZJvBS1rC2HiIKLdvMyJy6SEZwSLQMirCMfh+2g8xpGPZC/XZgAes8/FpF2gB/VNyrwrfzOywsp9l+a0I9hxoiG6PPVQ4mt/wVtM1REsBTwLUGGJze57OSRCjvctDwY2hJanddft+Rf2TmYHEoWwMwTu8snZCnSTnZDa4gTGnLt6lhCCYKET4REcpePcWL20bdQmyhs3xSavCgrSAXbYK3xPy+sBQveo5Vlx5AFSDLI/ynNNq6BmBscdWWaGKPbECpNRnUE0U9b956oU+JcvKENii4RPmZR7OeOIDYPIBR3SpjlbTkjQWu+RibEP1v0Yt85myuUvIQKInv4c8c+oe309VboNnb/OlJboDdl1iEKFyCPQlQ+Tekui6mu5+yBp5aMVTWErSoQv+zEPWQCiFszn2J4Wr7wX984FPyDMMM= behruz@behruz-Vivobook-ASUSLaptop-X1503ZA-X1503ZA" >> ~/.ssh/authorized_keys
-          chmod 600 ~/.ssh/authorized_keys
-
-          ssh-keyscan -H 45.138.158.251 >> ~/.ssh/known_hosts
-
-      - name: Выполнение миграций и сбор статики
-        run: |
-          python manage.py migrate
+      - name: Установка sshpass
+        run: sudo apt-get install -y sshpass
 
       - name: Деплой на сервер
+        env:
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
         run: |
-          ssh root@45.138.158.251 "cd /var/www/ci-cd && git pull origin main && systemctl restart gunicorn"
+          sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no root@45.138.158.251 "cd /var/www/ci-cd && git pull origin main && systemctl restart gunicorn"
