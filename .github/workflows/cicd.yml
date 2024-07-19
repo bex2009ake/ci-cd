@@ -25,43 +25,7 @@ jobs:
 
       - name: Настройка SSH для деплоя
         env:
-          SSH_PRIVATE_KEY:   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
-                             NhAAAAAwEAAQAAAYEAp1suG2AW6pSqop1lvWcud3AaPsZzt8juTpQ+1RAbMliDwFkTM4DD
-                             4qOTaUrtQCjZqBm04p+whi9AmYXqnLpeTlNmSbwUtawth4iCi3bzMicukhGcEi0DIqwjH4
-                             ftoPMaRj2Qv12YAHrPPxaRdoAf1Tcq8K38zssLKfZfmtCPYcaIhujz1UOJrf8FbTNURLAU
-                             8C1Bhic3uezkkQo73LQ8GNoSWp3XX7fkX9k5mBxKFsDME7vLJ2Qp0k52Q2uIExpy7epYQg
-                             mChE+ERHKXj3Fi9tG3UJsobN8UmrwoK0gF22Ct8T8vrAUL3qOVZceQBUgyyP8pzTaugZgb
-                             HHVlmhij2xAqTUZ1BNFPW/eeqFPiXLyhDYouET5mUeznjiA2DyAUd0qY5W05I0FrvkYmxD
-                             9b9GLfOZsrlLyECiJ7+HPHPqHt9PVW6DZ2/zpSW6A3ZdYhChcgj0JUPk3pLouprufsgaeW
-                             jFU1hK0qEL/sxD1kAohbM59ieFq+8F/fOBT8gzDDAAAFqBYIlKUWCJSlAAAAB3NzaC1yc2
-                             EAAAGBAKdbLhtgFuqUqqKdZb1nLndwGj7Gc7fI7k6UPtUQGzJYg8BZEzOAw+Kjk2lK7UAo
-                             2agZtOKfsIYvQJmF6py6Xk5TZkm8FLWsLYeIgot28zInLpIRnBItAyKsIx+H7aDzGkY9kL
-                             9dmAB6zz8WkXaAH9U3KvCt/M7LCyn2X5rQj2HGiIbo89VDia3/BW0zVESwFPAtQYYnN7ns
-                             5JEKO9y0PBjaElqd11+35F/ZOZgcShbAzBO7yydkKdJOdkNriBMacu3qWEIJgoRPhERyl4
-                             9xYvbRt1CbKGzfFJq8KCtIBdtgrfE/L6wFC96jlWXHkAVIMsj/Kc02roGYGxx1ZZoYo9sQ
-                             Kk1GdQTRT1v3nqhT4ly8oQ2KLhE+ZlHs544gNg8gFHdKmOVtOSNBa75GJsQ/W/Ri3zmbK5
-                             S8hAoie/hzxz6h7fT1Vug2dv86UlugN2XWIQoXII9CVD5N6S6Lqa7n7IGnloxVNYStKhC/
-                             7MQ9ZAKIWzOfYnhavvBf3zgU/IMwwwAAAAMBAAEAAAGAAkPJ7KWEJq0kkmozFMX/Ma8xY7
-                             t9/s6eaJWgAUEkPq4TX/iBbOqBFbsx+DRP4DtNSsJiTMjT2jtseK3NXk0CKej+BhRtN7iU
-                             FMGRRrLkf3LBS6/AuKXZGFCGpY59qRAKwUjKNMf4ke6xIrQhYgTbQwbpzI0GOIQ0UZKO4H
-                             XFfJGNVz0/nRmHYcGFDZSRJa0381Ihd1/NF/W8cbjXCFl8dx4IYcD0euXU40LGZ6hGWZpG
-                             7yNukEkBbRVFWD86l0uXafdQ2suVkaem+YB9qcpVm9Al5ogVm7wzPFnlXWNtQ8vA0a+YuD
-                             wU0JPrI7BpbSEFn5r/xef+iCZERZpKBA0LSut8JeFi+9w1ionpm1bpEE3eohb11fdfonel
-                             Q4GUH//8m0sw8eeeFOWj89J+UcRcXek29XBXlu0rsgTFioufzlvLaH+Atm+eyVq6+zL57N
-                             gwdMxCTwuEAAH573R9YdbgXTW0nBfxpDuvaQsEZiQQgm4iuPA4b68lL4/rkxQHNjUNAAAA
-                             wAbO1TEyEMBhov92NKoNer7muT4P2x0m7i6LiCqNc+VMIb4F9f5cI2s64aE32UYozqpaiF
-                             lN4xNBAkJEVY6RARyh/C/9zxbA4tleCKU7fyaIlQyz8CBJz1B3kC+5bjtdKa95LHxKizoe
-                             jzDCBtg8EYjDVZDLXCFsJyFrouHWDNMlTDZlCoD2LGX3FcxiyWAlytXItQ/kow6i34/5TP
-                             qY28yQOrdUXJc+puPtRSuINPLzW+NnyWq3D5/1sya6pmBNqAAAAMEA2gI8HM1iePZ+2Jxr
-                             mYuih3Dhixrq8eSwXk/M4ljZwcvkC3kDkHh/78XE0ipf2d2EIYrSaEtgj2psD/dC9NDFit
-                             n1ipIO2mPbkNxakKHBBEWmxtpO5G+KZ0LLUmKQTUFK3FB3FycZPJCZjCPSulk1u/ER5N6W
-                             KqC9/TnwGtEkHxseCp8/51q6voybND+8M0YCQlLB/ZPY946AMPPKM6hucJFgBaZKqbrLKz
-                             razM8zMBI1yEMzFwokza9Oh3d1iS1nAAAAwQDEhT4lDOm9HlwdZINWy+sN6kFicSlMY2Fk
-                             emi2IaQcwEiD48kmmpbicfFdVXSJu3WF76g2qJ3F18bQLU8kq/VMyIerbgmcwx88NhjPPa
-                             HCiFCBoV/Yfewn1ZJGSwRpFFRVjvJagkhHS0pBIWSAvX+JIFreEveXjYXNCmMiBoXNO8Ya
-                             ghOOqRmx0qbdnHvTmCT2CFf1On2bjwVIhLmaShWyRn9wNg0fx/TA2pV08bZLIZ2PsDA3Q7
-                             VS5E8NYqV57EUAAAAxYmVocnV6QGJlaHJ1ei1WaXZvYm9vay1BU1VTTGFwdG9wLVgxNTAz
-                             WkEtWDE1MDNaQQEC
+          SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY }}
 
         run: |
           mkdir -p ~/.ssh
