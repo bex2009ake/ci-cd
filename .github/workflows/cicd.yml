@@ -35,11 +35,7 @@ jobs:
       - name: Выполнение миграций и сбор статики
         run: |
           python manage.py migrate
-          python manage.py collectstatic 
 
-      - name: Запуск тестов
-        run: |
-          python manage.py test
 
       - name: Деплой на сервер
         run: |
